@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans", sans-serif;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+
+}
+#logo{
+    width: 70px;
+    height: 60px;
+    margin: 30px;
+}
+
+nav{
+    width: 100vw;
+    height: 18vh;
+    background-color: rgb(75, 36, 8);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+nav ul{
+    padding: 50px;
+    list-style-type: none;
+    width: 750px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 3vh;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+}
+nav ul li a.active, a:hover{
+    background-color: rgb(235, 15, 15);
+}
+#check{
+    display: none;
+}
+#check:checked ~ ul{
+    transition: all 0.5s ease-in-out 0ms;
+ left: 0;
+}
+#menu{
+    font-size: 5vh;
+    margin: 40px;
+    color: white;
+    display: none;
+}
+.hallpic{
+    width: 100vw;
+    height: 80vh;
+    background-image: url(hallpic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    
+@media (max-width:640px) {
+    #menu{
+        display: block;
+    }
+    nav ul{
+        top:18vh;
+        width: 100vw;
+        height: 82vh;
+        position: absolute;
+        background-color: rgb(22, 21, 21);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;   
+        left: -100%;
+    }
+    nav ul li a{
+        font-size: 5vw;
+    }
+    .hallpic{
+        width: 100vw;
+        height: 82vh;
+        background-image: url(hallpic-for-mobaile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+}
+
+
+
