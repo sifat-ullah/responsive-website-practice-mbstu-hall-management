@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -75,7 +76,7 @@ nav ul li a.active, a:hover{
     nav ul{
         top:18vh;
         width: 100vw;
-        height: 82vh;
+        height: 600px;
         position: absolute;
         background-color: rgb(22, 21, 21);
         display: flex;
@@ -87,14 +88,193 @@ nav ul li a.active, a:hover{
         font-size: 5vw;
     }
     .hallpic{
-        width: 100vw;
+        width: 100%;
         height: 82vh;
         background-image: url(hallpic-for-mobaile.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
+  .box{
+    font-size:10px;
+  }
+  .heading{
+    font-size: small;
+    width: 80%;
+ 
+  }
+  .footer_container{
+    font-size:10px;
+  }
+    
+}
+h1{
+    padding: 10px;
+    text-align: center;
+    margin: 50px;
+    border-bottom: 5px solid black;
+}
+p{
+    text-align:justify;
+    margin: 0px 10 10 50px;
+    font-size: 25px;
+    padding: 10px;
+}
+.Container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Container .heading{
+    font-size:x-large;
+    font-weight: bolder;
+    border-bottom: 5px;
+    text-align: center;
+    width: 100%;
+}
+.Container .heading span{
+    opacity: 0.5;
+}
+.Container .image{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100vw;
+    margin: 20px;
+    padding: 0px 20px;
+}
+@media (min-width:1000px) {
+    .Container .heading{
+        font-size: xx-large;
+        width: 40%;
+    }
+    .Container .image{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+       
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+   
+}
+.footer_container{
+    margin: 30px 0px;
+    padding-top: 20px;
+    background-color: rgb(228, 228, 216);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    text-align: start;
+    
+}
+h4{
+    padding: 20px 0px;
+    
+}
+.footer_column1{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: start;
+
+}
+.footer_column1 a{
+    text-decoration: none;
+    color: #7e818a;
+}
+.footer_column2{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.footer_column2 a{
+    text-decoration: none;
+    color: #7e818a;
+}
+.footer_column3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
     
 }
 
+.copy_right{
+    color: #3e4152;
+    padding: 20px;
+    text-align: end;
+    font-size:10px;
+    width: 100%;
+}
+.footer_column3 p{
+    color: #7e818a;
+    font-size: 1em;
+}
+@media (min-width:1000px) {
+    .copy_right{
+        font-size:20px;
+    }
+    
+    
+}
+#notice{
+    height: 90vh;
+    width: 100vw;
+    border: 5px solid red;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+#noticboard{
+    text-align: center;
+    color: rgb(110, 10, 10);
+    font-size: xx-large;
+    padding: 40px; 
+    background-color: rgb(204, 162, 162);
+    border-radius: 4px;
+    z-index: -20px;
+}
+marquee{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: static;
+    z-index: -20px;
+}
+marquee img{
+    width: 100%;
+    height: 100%;
+}
+.section1{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 640px) {
+  #notice{
+    height: 80vh;
+    width: 100vw;
+    font-size: 12px;
+    margin-bottom: 100px;
 
-
+  }
+    
+}
+@media (min-width:1000px) {
+    #notice{
+        width: 60vw;
+        height: 90vh;
+        margin-bottom: 200px;
+    }
+    
+}
